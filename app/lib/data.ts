@@ -1,5 +1,6 @@
 import postgres from 'postgres';
-import TeamField from './definitions';
+import { TeamField } from './definitions';
+const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
 export async function fetchTeams() {
   try {
     const teams = await sql<TeamField[]>`

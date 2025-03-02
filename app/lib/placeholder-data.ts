@@ -1,16 +1,18 @@
 const teams = [
-  {id: '410544b2-4001-4271-9855-fec4b6a6442a',
-  name: 'FC Rangers',
-  description: 'It is a old team. They won title once.',
-  owner_name: 'Khairul',
-  matches_played: 4,
-  matches_won: 2,
-  matches_lost: 1,
-  matches_drawn: 1,
-  goal_scored: 10,
-  goal_conceded: 8,
+  {
+    id: '410544b2-4001-4271-9855-fec4b6a6442a',
+    name: 'FC Rangers',
+    description: 'It is a old team. They won title once.',
+    owner_name: 'Khairul',
+    matches_played: 4,
+    matches_won: 2,
+    matches_lost: 1,
+    matches_drawn: 1,
+    goal_scored: 10,
+    goal_conceded: 8,
   },
-  {id: '410544b3-4001-4271-9855-fec4b6a6442a',
+  {
+    id: '410544b3-4001-4271-9855-fec4b6a6442a',
     name: 'FC 817',
     description: 'It is a old team. They won title once.',
     owner_name: 'Emon',
@@ -20,7 +22,7 @@ const teams = [
     matches_drawn: 1,
     goal_scored: 10,
     goal_conceded: 8,
-   },
+  },
 ]
 
 const players = [
@@ -91,3 +93,5 @@ const players = [
     isCaptain: true,
   }
 ]
+
+export { players, teams };
